@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('images/pkk.jpg');
+  background-size: cover; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+    font-family: Arial;
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #fbff00;
+    border: 3px solid black;
+    width: 70%;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #22222288;
+    color: #fbff00;
+}
+
+ul.topnav li a.active {
+    background-color: #222222;
+    color: #fbff00;
+}
+h1 {
+  color:rgb(45, 204, 31);
+  margin-top: 80px;
+  font-weight: 600;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 3s;
+}
+h2 {
+    color: #fbff00;
+    margin-top: 50px;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+h3 {
+    color: #fbff00;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+img {
+    display: block;
+    width: 12%;
+    margin-top: 3px;
+    margin-left: 850px;
+    margin-right: auto;
+    animation: fade-in-left 1s ease-in-out forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+}
+@keyframes fade-in-left {
+    from {
+      opacity: 0;
+      left: -10px;
+      top: 40px;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      top: 40px;
+      left: 120px;
+      transform: translateX(0);
+    }
+}
+form {
+    background: #222222;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 5%;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0px 5px 15px 8px rgb(0, 0, 0);
+    border: 3px solid #fbff00;
+    color:#fbff00;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+  }
+  
+  td, th {
+    border: 1px solid #fbff00;
+    padding: 8px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 8px;
+    width: 100%;
+    border: 3px solid #fbff00;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  button[type="submit"], button {
+    background-color: #fbff00;
+    color: #222222;
+    border: 3px solid #000000;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 9px;
+
+  }
+  
+  button[type="submit"]:hover, button:hover {
+    background-color: #222222;
+    color: #fbff00;
+    border: 3px solid #fbff00;
+  }
+  .transc-table {
+    margin: 10%;
+    margin-top: 5%;
+}
+
+
+
